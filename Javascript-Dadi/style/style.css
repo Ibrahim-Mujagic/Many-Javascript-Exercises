@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: monospace;
+}
+
+header{
+  height: 90px;
+  text-align: center;
+  line-height: 90px;
+  background-color: gainsboro;
+  color: #fff;
+  box-shadow: 0px 0px 10px gainsboro;
+}
+
+.container-general{
+  height: calc(100vh - 90px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.presentation-text{
+  margin: 10px 0px;
+  color: gainsboro;
+  text-align: center;
+}
+
+.cont-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cont-game .user-num,.start-btn{
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: 1px solid gainsboro;
+  margin-bottom: 20px;
+}
+
+.cont-game .start-btn{
+  cursor: pointer;
+}
