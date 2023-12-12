@@ -3,3 +3,56 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  font-family: monospace;
+}
+
+header{
+  height: 90px;
+  text-align: center;
+  line-height: 90px;
+  background-color: gainsboro;
+  color: #fff;
+  box-shadow: 0px 0px 10px gainsboro;
+}
+
+.container-general{
+  height: calc(100vh - 90px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-general .cont-boxes{
+  height: 600px;
+  width: 600px;
+  border: 1px solid gainsboro;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 10px gainsboro;
+}
+
+
+.container-general .cont-boxes .box{
+  height: calc(100% / 10);
+  width: calc(100% / 10);
+  border: 1px solid gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .7rem;
+}
+
+.fizz-buzz{
+  background-color: #F0466F;
+}
+
+.buzz{
+  background-color: #FFD166;
+}
+
+.fizz{
+  background-color: #0AD6A1;
+}
