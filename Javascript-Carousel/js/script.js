@@ -21,15 +21,6 @@ function getFirstPic(index){
   nextPrevPic(index,planetPics)
 }
 
-function controlDirection(boolean){
-  if (boolean) {
-    return true
-  }
-  else{
-    return false
-  }
-}
-
 function nextPrevPic(index,planets){
   const nextBtn = document.querySelector('.btn-right');
   const prevBtn =  document.querySelector('.btn-left');
