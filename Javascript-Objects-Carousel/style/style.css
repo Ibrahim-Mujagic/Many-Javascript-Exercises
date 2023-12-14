@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: monospace;
+  background-color: rgb(201, 201, 201);
+}
+
+header{
+  height: 90px;
+  text-align: center;
+  line-height: 90px;
+  color: #fff;
+  background-color: gainsboro;
+  box-shadow: 0px 0px 10px gainsboro;
+}
+
+.container-general{
+  height: calc(100vh - 90px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel{
+  width: 90%;
+  height: 550px;
+  position: relative;
+  box-shadow: 0px 0px 10px black;
+}
+
+.carousel button{
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  border: 1px solid gainsboro;
+  color: #fff;
+  box-shadow: 0px 0px 10px gainsboro;
+  text-shadow: 0px 0px 5px black;
+  cursor: pointer;
+}
+
+.carousel button.btn-left{
+  left: 20px;
+}
+.carousel button.btn-right{
+  right: 20px;
+}
+
+.text-container{
+  position: absolute;
+  top: 20%;
+  right: 140px;
+  color: #fff;
+}
+
+.carousel .cont-image{
+  height: calc(100% - 110px);
+  width: 100%;
+}
+
+.carousel .cont-image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+} 
+
+.carousel .images-preview{
+  height: 110px;
+  width: 100%;
+  display: flex;
+}
+
+.carousel .images-preview .box{
+  width: calc(100% / 5);
+  height: 100%;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.carousel .images-preview .box.active{
+  border: 2px solid white;
+  opacity: 1;
+}
+
+.carousel .images-preview .box img{
+  width: 100%;
+  height: 100%;
+}
