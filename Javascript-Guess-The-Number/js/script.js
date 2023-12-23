@@ -52,7 +52,7 @@ function disableButtons(buttons){
 function checkDifficulty(button){
   if (button.innerText === 'Easy') {
     maxNum = 20;
-    maxTime = 25;
+    maxTime = 40;
   }else if (button.innerText === 'Medium') {
     maxNum = 35;
     maxTime = 35
