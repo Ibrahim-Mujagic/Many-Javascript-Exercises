@@ -26,8 +26,12 @@ header{
   align-items: center;
 }
 
+.container-general p:first-child{
+  margin-bottom: 10px;
+}
+
 .container-general .cont-game{
-  height: 600px;
+  min-height: 100px;
   width: 450px;
   border: 1px solid cadetblue;
   border-radius: 10px;
@@ -83,6 +87,7 @@ header{
 
 .cont-game .cont-user-input{
   width: 100%;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -120,13 +125,47 @@ header{
   color: crimson;
 }
 
+.cont-game .cont-user-input .input-container .correction-cont i.fa-thumbs-up{
+  color: green;
+  animation: changeSize 2s infinite;
+}
+
+@keyframes changeSize{
+  0%,100%{
+    font-size: 1.3rem;
+  }
+  50%{
+    font-size: 1.5rem;
+  }
+}
+
 .cont-game .output-message{
   height: 100px;
-  text-align: center;
   padding: 10px;
-  border: 1px solid red;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.cont-game .output-message button{
+  padding: 10px;
+  border-radius: 13px;
+  border: none;
+  background-color: cadetblue;
+  color: #fff;
+  cursor: pointer;
+  animation: changeSize2 1s infinite;
+  margin: 5px;
+}
+
+@keyframes changeSize2{
+  0%,100%{
+    font-size: .9rem;
+  }
+  50%{
+    font-size: 1rem;
+  }
 }
 
 .start-counter-cont{
